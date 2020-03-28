@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,500&display=swap");
+
+body {
+  color: #181818;
+  font-family: "EB Garamond", sans-serif;
+  font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.App-intro {
+  border: 5px solid #f3f3f3;
+  background-color: #f3f3f3;
+  width: 65vmin;
+  height: 45vmin;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  pointer-events: none;
+  padding: 1.2rem;
+}
+
+.App-header {
+  background-color: #586457;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header h1 {
+  font-weight: 400;
+  color: #181818;
+  /* font-size: 2.2rem; */
+  margin: 0;
+  font-weight: 500;
+}
+
+.App-header p {
+  margin: 0;
+  /* font-size: 1rem; */
+  font-weight: 400;
+}
+
+.App-header h2 {
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.App-header span {
+  /* font-size: 1.25rem; */
+}
+
+.section {
+  padding: 10px;
+}
+
+/* --- Mobile styles --- */
+
+@media (max-width: 373px) {
+  .App-intro {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+  .App-intro {
+    height: 35vh;
+  }
+}
+
+/* --- Large screen styles --- */
+
+@media (min-width: 1919px) {
+  .App-intro {
+    height: 35vmin;
+    padding: 1.5em;
+  }
+}
